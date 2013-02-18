@@ -8,6 +8,7 @@ gem 'serve', '1.5.1'
 # Use Compass and Sass
 gem 'compass'
 gem 'susy'
+gem 'sass-globbing'
 # Markdown and Textile
 # gem 'rdiscount' # Markdown
 # gem 'RedCloth'  # Textile

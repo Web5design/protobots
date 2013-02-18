@@ -16,6 +16,8 @@ GEM
     rack-test (0.6.2)
       rack (>= 1.0)
     sass (3.2.5)
+    sass-globbing (1.0.0)
+      sass (>= 3.1)
     serve (1.5.1)
       activesupport (~> 3.0)
       i18n
@@ -34,5 +36,6 @@ PLATFORMS
 
 DEPENDENCIES
   compass
+  sass-globbing
   serve (= 1.5.1)
   susy
