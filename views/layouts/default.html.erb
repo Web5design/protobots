@@ -9,9 +9,11 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        <% if @templatecss != 'false'%>
-        <link rel="stylesheet" href="css/wireframes/layouts/<%=@template%>.css">
-        <% end %>
+        <%=
+        if @templatecss != 'false'
+            stylesheet_link_tag("/css/wireframes/layouts/#{@template}.css")
+        end
+        %>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/prettify.css">
     </head>
