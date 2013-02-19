@@ -1,1 +1,20 @@
-<h1>Feed Me</h1>
+<%
+  @bodyclass = "testing123"
+  @template = "3col"
+  @templatecss = "false"
+  @prettify = "yes"
+%>
+
+<h1>This is da yield mon</h1>
+
+<% content_for :left do %>
+  <h2>left</h2>
+<% end %>
+
+<% content_for :middle do %>
+  <h2>middle</h2>
+<% end %>
+
+<% content_for :right do %>
+  <h2>right</h2>
+<% end %>
