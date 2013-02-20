@@ -1,1 +1,19 @@
 @import "base";
+@import "wireframes/zurb";
+
+#drupal-patterns, #drupal-navigation, #drupal-forms {
+  max-width: 960px;
+  margin: 0 auto;
+  .element {
+    clear: both;
+    background: #efefef;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    .element-title {
+      background: #ddd;
+      padding: 5px;
+      text-align: center;
+    }
+  }
+}

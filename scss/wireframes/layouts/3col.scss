@@ -1,5 +1,5 @@
 @import "../../base";
-div {
+.column {
   background: #999;
   min-height: 500px;
   @include span-columns(4,12);
