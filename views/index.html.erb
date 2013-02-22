@@ -4,7 +4,8 @@
   @templatecss = "true"
 %>
 
-<%= render "partials/test", :locals => {  :title => "Past Events" } %>
+<%= render "partials/test", locals: { title: "Past Events" } %>
+<%= render "partials/test" %>
 
 <% content_for :left do %>
   <h2>left</h2>
