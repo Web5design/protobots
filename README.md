@@ -8,8 +8,6 @@ The following render can be used to pass variables to the called partial.
 The partial would then look like the following
 
     <%
-    if !defined? title
-      title = "Default Title"
-    end
+     title ||= "Default Title"
     %>
     <h2><%= title %></h2>
