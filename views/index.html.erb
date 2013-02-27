@@ -1,20 +1,18 @@
-<%
-  @bodyclass = "testing123"
-  @template = "3col"
-  @templatecss = "true"
-%>
+<% @template = "3col" %>
+<% @templatecss = "true" %>
 
-<%= render "partials/test", locals: { title: "Past Events" } %>
-<%= render "partials/test" %>
-
+<%= render "partials/drupal/patterns/site-name.haml" %>
 <% content_for :left do %>
-  <h2>left</h2>
+<%= render "partials/drupal/patterns/form-login.haml" %>
+<%= render "partials/drupal/patterns/form-new-account.haml" %>
 <% end %>
 
 <% content_for :middle do %>
-  <h2>middle</h2>
+<%= render "partials/drupal/patterns/form-markup.haml" %>
 <% end %>
 
 <% content_for :right do %>
-  <h2>right</h2>
+<%= render "partials/drupal/patterns/comments.haml" %>
+<%= render "partials/drupal/patterns/form-comment.haml" %>
 <% end %>
+

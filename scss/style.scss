@@ -5,11 +5,16 @@
   max-width: 960px;
   margin: 0 auto;
   .element {
-    clear: both;
+    width: 45%;
+    margin-right: 5%;
     background: #efefef;
     margin-bottom: 20px;
     padding: 20px;
     border: 1px solid #ddd;
+    float: left;
+    &:nth-child(2n) {
+      clear: both;
+    }
     .element-title {
       background: #ddd;
       padding: 5px;
