@@ -1,11 +1,11 @@
 <%
   @bodyclass = "testing123"
   @template = "3col"
-  @templatecss = "false"
-  @prettify = "yes"
+  @templatecss = "true"
 %>
 
-<h1>This is da yield mon</h1>
+<%= render "partials/test", locals: { title: "Past Events" } %>
+<%= render "partials/test" %>
 
 <% content_for :left do %>
   <h2>left</h2>
