@@ -46,9 +46,9 @@ The Tools
 <a href="http://www.get-serve.com">Get-Serve</a>
 
 ##The Team
-Carwin Young  - Front End - Project Co-Lead
-Micah Godbolt - Front End - Project Co-Lead
-Jared Ponchot - Design Tester
+* Carwin Young  - Front End - Project Co-Lead
+* Micah Godbolt - Front End - Project Co-Lead
+* Jared Ponchot - Design Tester
 
 
 ##Tips
