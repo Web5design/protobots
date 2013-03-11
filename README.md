@@ -2,27 +2,27 @@
 Designing in the browser is becoming the standard approach for many designers today. While it has many advantages over static Photoshop comps, it is not without it's drawbacks.
 
 * HTML is Complex
-**  Creating a contact form in Photoshop only requires a few rectangles and text blocks, but in HTML there is a considerable amount of markup needed to accurately portray the labels and fields of a form.
+  *  Creating a contact form in Photoshop only requires a few rectangles and text blocks, but in HTML there is a considerable amount of markup needed to accurately portray the labels and fields of a form.
 * Drupal Markup is Even More Complex
-**  Drupal (or any other CMS) will come with it's own conventions for forms, search fields, navigation and other UI elements. We often use generic markup to speed up our design process, but in the end this means a longer themeing process.
+  *  Drupal (or any other CMS) will come with it's own conventions for forms, search fields, navigation and other UI elements. We often use generic markup to speed up our design process, but in the end this means a longer themeing process.
 * Complex UI Elements Slow Down Design
-**  Creating a slideshow in Photoshop requires an image and a few arrows. Done.
-**  Creating a working slideshow in html/css/js takes considerably more time! And innevitably, after you spend a day creating a slideshow, the client will go "nah" and ask for a carousel instead.
+  *  Creating a slideshow in Photoshop requires an image and a few arrows. Done.
+  *  Creating a working slideshow in html/css/js takes considerably more time! And innevitably, after you spend a day creating a slideshow, the client will go "nah" and ask for a carousel instead.
 
 ##Project Goals
 * Modular
-**  Easily add new components
-**  Easily override existing components
+  *  Easily add new components
+  *  Easily override existing components
 * Understandable
-**  Thorough Documentation
-**  Links to information on relevant subjects / tutorials
-**  Component preview pages
+  *  Thorough Documentation
+  *  Links to information on relevant subjects / tutorials
+  *  Component preview pages
 * Flexible
-**  Framework agnostic, yet capable (SUSY, ZURB Foundation, etc... or nothing at all)
-**  Easily adjust stylesheet usage for a given template or layout
-**  Write markup with HTML, HAML, <insert your favorite>
+  *  Framework agnostic, yet capable (SUSY, ZURB Foundation, etc... or nothing at all)
+  *  Easily adjust stylesheet usage for a given template or layout
+  *  Write markup with HTML, HAML, <insert your favorite>
 * Lightweight
-**  Nothing should ever be forced on the user, if desired, the ability to produce a simple HTML page with a single stylesheet should be available.
+  *  Nothing should ever be forced on the user, if desired, the ability to produce a simple HTML page with a single stylesheet should be available.
      <em>E.g: Do not compile that which is not wanted.</em>
 
 #The Solution
