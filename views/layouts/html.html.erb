@@ -19,11 +19,11 @@
     </head>
     <body  class="<%= @bodyclass %>" >
 
-       <%=
-        if defined? @page_tpl
-            render :template => "/layouts/page-#{@page_tpl}.html.erb"
-        else
-            render :template => "/layouts/page.html.erb"
+        <%= yield %>
+
+        <%=
+        if defined? @template
+            render :template => "/layouts/templates/#{@template}"
         end
         %>
 

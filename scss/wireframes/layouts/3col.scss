@@ -1,7 +1,0 @@
-@import "../../base";
-.column {
-  background: #999;
-  min-height: 500px;
-  @include span-columns(4,12);
-  @include nth-omega(3n)
-}

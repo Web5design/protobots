@@ -1,18 +1,25 @@
-<% @template = "3col" %>
-<% @templatecss = "true" %>
+<%
+@bodyclass = ''
+%>
 
-<%= render "partials/drupal/patterns/site-name.haml" %>
-<% content_for :left do %>
-<%= render "partials/drupal/patterns/form-login.haml" %>
-<%= render "partials/drupal/patterns/form-new-account.haml" %>
+
+<% content_for :header do %>
+
 <% end %>
 
-<% content_for :middle do %>
-<%= render "partials/drupal/patterns/form-markup.haml" %>
+<% content_for :content do %>
+
 <% end %>
 
-<% content_for :right do %>
-<%= render "partials/drupal/patterns/comments.haml" %>
-<%= render "partials/drupal/patterns/form-comment.haml" %>
+<% content_for :sidebar_primary do %>
+
+<% end %>
+
+<% content_for :sidebar_secondary do %>
+
+<% end %>
+
+<% content_for :footer do %>
+
 <% end %>
 

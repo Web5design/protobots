@@ -1,13 +1,13 @@
-<% @template = "3col" %>
-<% @templatecss = "true" %>
-abc
-<% content_for :left do %>
-<%= render "partials/drupal/patterns/site-name.haml" =>
-<% end %>
+<%
+  # define an empty array
+    partials = []
 
-<% content_for :middle do %>
-<% end %>
+    # glob all the files in the directory variable and add them to the partials array
+    Dir.glob("views/partials/user/patterns/*.*") do |filename|
+        partials << File.basename(filename)
+    end
+    partials.each do |partial| %>
 
-<% content_for :right do %>
+    <%= render :template => "patterns/#{partial}" %>
 <% end %>
 
