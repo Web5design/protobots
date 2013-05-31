@@ -3,11 +3,11 @@
     partials = []
 
     # glob all the files in the directory variable and add them to the partials array
-    Dir.glob("views/partials/drupal/patterns/*.*") do |filename|
+    Dir.glob("views/components/*.*") do |filename|
         partials << File.basename(filename)
     end
     partials.each do |partial| %>
 
-    <%= render :template => "patterns/#{partial}" %>
+    <%= render :template => "#{partial}" %>
 <% end %>
 

@@ -1,24 +1,16 @@
-@import "base";
-@import "wireframes/zurb";
+@import "compass";
+@import "susy";
+@import "global/variables";
+@import "global/functions";
+@import "global/extends/**/*";
+@import "global/mixins/**/*";
+//@import "base/html/*";
+@import "base/page/*";
+@import "components/**/*";
+@import "layout/**/*";
 
-#drupal-patterns, #drupal-navigation, #drupal-forms {
-  max-width: 960px;
-  margin: 0 auto;
-  .element {
-    width: 45%;
-    margin-right: 5%;
-    background: #efefef;
-    margin-bottom: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    float: left;
-    &:nth-child(2n) {
-      clear: both;
-    }
-    .element-title {
-      background: #ddd;
-      padding: 5px;
-      text-align: center;
-    }
+body {
+  @include respond-to(600px, $no-query:true, $no-query-value:oldie) {
+  background: blue;
   }
 }

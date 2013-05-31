@@ -1,4 +1,4 @@
-source :rubygems
+source "https://rubygems.org"
 
 gem 'serve', '1.5.2'
 
@@ -9,13 +9,14 @@ gem 'serve', '1.5.2'
 gem 'compass'
 gem 'susy'
 gem 'sass-globbing'
+
 # Markdown and Textile
 # gem 'rdiscount' # Markdown
 # gem 'RedCloth'  # Textile
 
 # Other templating languages
 # gem 'erubis'
-gem 'haml'
+# gem 'haml'
 # gem 'slim'
 # gem 'radius'
 # gem 'less'
