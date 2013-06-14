@@ -3,12 +3,13 @@
 /* Directives */
 
 angular.module('ngProtobotsApp')
-  .directive('partial', function() {
+  .directive('partial', function($compile) {
     return {
       restrict: "E",
       scope: {repeating : "@"},
       templateUrl: function($element, $attrs) {
-        return 'views/partials/' + $attrs.file + '.html';
+        var template ='views/partials/' + $attrs.file + '.html';
+        return template;
       },
       replace: true,
     }
@@ -69,9 +70,11 @@ angular.module('ngProtobotsApp')
     restrict: "A",
     compile: function(tElement, attrs) {
       var content = tElement.children();
-      for (var i=1; i<attrs.repeat; i++) {
-        tElement.append(content.clone());
-      }
+      attrs.$observe('repeat', function(newVal) {
+        for (var i=1; i<attrs.repeat; i++) {
+          tElement.append(content.clone());
+        }
+      })
     },
   }
 });
