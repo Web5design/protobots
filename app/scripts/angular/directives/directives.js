@@ -6,6 +6,7 @@ angular.module('ngProtobotsApp')
   .directive('partial', function() {
     return {
       restrict: "E",
+      scope: {repeating : "@"},
       templateUrl: function($element, $attrs) {
         return 'views/partials/' + $attrs.file + '.html';
       },
@@ -62,4 +63,15 @@ angular.module('ngProtobotsApp')
         };
       }
     }
-  });
+  })
+  .directive('repeat', function() {
+    return {
+    restrict: "A",
+    compile: function(tElement, attrs) {
+      var content = tElement.children();
+      for (var i=1; i<attrs.repeat; i++) {
+        tElement.append(content.clone());
+      }
+    },
+  }
+});
