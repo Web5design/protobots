@@ -5,11 +5,13 @@ angular.module('ngProtobotsApp', [])
     $locationProvider.html5Mode(true);
     $routeProvider.
       when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/home.html'
+      }).
+       when('/blog-node', {
+        templateUrl: 'views/blog-node.html'
       }).
       when('/:name', {
-        templateUrl: 'views/main.html',
+        templateUrl: 'views/home.html',
         controller: 'PagesController'
       }).
       otherwise({

@@ -1,31 +1,46 @@
-#page {
-
+.page {
+  @include container();
+  background:white;
 }
 
-#header {
-
+.header {
+  @include span-columns(12);
+  @include bleed($grid-padding);
 }
 
-#main {
-
+.main {
+  @include span-columns(12);
 }
 
-#content {
-
+.content {
+  @include span-columns(12);
+  @include respond-to($medium) {
+    @include span-columns(8);
+  }
 }
 
-#sidebar-first {
-
+.sidebar-first {
+  @include span-columns(12);
+  @include respond-to($medium) {
+    @include span-columns(4 omega);
+  }
 }
 
-#sidebar-second {
-
+.sidebar-second {
+  @include span-columns(12);
+  @include respond-to($medium) {
+    clear: right;
+    @include span-columns(4 omega);
+  }
 }
 
-// End #main
+// End .main
 
-#footer {
-
+.footer {
+  @include span-columns(12);
 }
 
-// End #page
+// End .page
+
+
+

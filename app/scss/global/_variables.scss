@@ -1,0 +1,23 @@
+$total-columns  : 12;
+$column-width   : 5.3em;
+$gutter-width   : 1.2em;
+$grid-padding   : 2 * $gutter-width;
+
+
+// Breakpoints
+
+$small: 600px;
+$medium: 900px;
+
+//Colors
+$dark-grey: #333;
+$hero-grey: #8c8c8c;
+$main-nav-grey: #bababa;
+$med-grey:#484848;
+$light-grey: #ddd;
+$lightest-grey: #eee;
+
+
+// Typography - see typography.scss for styles.
+// Move variables back to this location if desired
+//

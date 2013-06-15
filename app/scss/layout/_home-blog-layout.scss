@@ -1,0 +1,4 @@
+.recent-blog-entries {
+  @include clearfix;
+  @include span-columns(12);
+}
