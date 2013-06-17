@@ -47,7 +47,7 @@ angular.module('ngProtobotsApp')
             // Wrap template in jqLite...
             newTemplate = angular.element(template.data);
 
-            angular.forEach(newTemplate.children(), function(block) {
+            angular.forEach(newTemplate.find('*'), function(block) {
               // wrap newTemplate.children() in jqLite.
               var _block = angular.element(block);
 

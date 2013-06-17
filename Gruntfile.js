@@ -55,9 +55,9 @@ module.exports = function (grunt) {
         options: {
           middleware: function (connect) {
             return [
-              modRewrite([ // http://ericduran.io/2013/05/31/angular-html5Mode-with-yeoman/
-                '!\\.html|\\.js|\\.css|\\.png$ /index.html [L]'
-              ]),
+              // modRewrite([ // http://ericduran.io/2013/05/31/angular-html5Mode-with-yeoman/
+              //   '!\\.html|\\.js|\\.css|\\.png$ /index.html [L]'
+              // ]),
               lrSnippet,
               mountFolder(connect, '.tmp'),
               mountFolder(connect, yeomanConfig.app)

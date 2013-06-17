@@ -21,6 +21,8 @@ $header-text-rendering: optimizeLegibility;
 
 
 //CSS @FontFace embed
+
+
 @font-face
 {
 	font-family: ClearSansMedium;
@@ -30,10 +32,10 @@ $header-text-rendering: optimizeLegibility;
 {
 	font-family: ClearSansBold;
 	src: url('../fonts/ClearSans-Bold.ttf');
-}	
+}
 
 
-//styles 
+//styles
 
 body{
 	font-family: $copy-font-family;

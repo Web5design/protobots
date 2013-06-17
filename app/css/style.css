@@ -832,24 +832,24 @@ img {
   src: url("../fonts/ClearSans-Bold.ttf");
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micah\/Sites\/protobots\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micah\/Sites\/protobots\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000340}}
 body {
   font-family: helvetica, georgia, serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micah\/Sites\/protobots\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micah\/Sites\/protobots\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000344}}
 p {
   line-height: 1.8em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micah\/Sites\/protobots\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micah\/Sites\/protobots\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000348}}
 h1, h2 {
   font-family: "ClearSansBold";
   letter-spacing: -1px;
   font-weight: normal;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micah\/Sites\/protobots\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micah\/Sites\/protobots\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000354}}
 h3, h4, h5, h6 {
   font-family: "ClearSansMedium", helvetica, georgia, serif;
   font-weight: normal;
@@ -859,42 +859,42 @@ h3, h4, h5, h6 {
   letter-spacing: -1px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micah\/Sites\/protobots\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micah\/Sites\/protobots\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000364}}
 h1 {
   font-size: 2.75em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micah\/Sites\/protobots\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micah\/Sites\/protobots\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000365}}
 h2 {
   font-size: 2.3125em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micah\/Sites\/protobots\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micah\/Sites\/protobots\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000366}}
 h3 {
   font-size: 1.6875em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micah\/Sites\/protobots\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micah\/Sites\/protobots\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000367}}
 h4 {
   font-size: 1.4375em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micah\/Sites\/protobots\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micah\/Sites\/protobots\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000368}}
 h5 {
   font-size: 1.125em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micah\/Sites\/protobots\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micah\/Sites\/protobots\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000369}}
 h6 {
   font-size: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micah\/Sites\/protobots\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micah\/Sites\/protobots\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000372}}
 strong {
   font-family: arial;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micah\/Sites\/protobots\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/micah\/Sites\/protobots\/app\/scss\/base\/html\/_typography\.scss}line{font-family:\0000376}}
 p.large {
   font-size: 1.4375em;
   font-family: arial;

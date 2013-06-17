@@ -341,13 +341,7 @@ FileETag None
 # comment it out and use `Options +SymLinksOfOwnerMatch`, but be aware of the
 # performance impact: http://goo.gl/Mluzd
 
-<IfModule mod_rewrite.c>
-  Options +FollowSymlinks
-# Options +SymLinksIfOwnerMatch
-  Options +FollowSymlinks
-  RewriteEngine On
-# RewriteBase /
-</IfModule>
+
 
 
 # ----------------------------------------------------------------------
