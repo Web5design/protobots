@@ -1,4 +1,5 @@
 .primary-navigation {
+  @include clearfix;
   background: $dark-grey;
   position: relative;
   .js & {

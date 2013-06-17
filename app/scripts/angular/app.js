@@ -7,14 +7,15 @@ angular.module('ngProtobotsApp', [])
       when('/', {
         templateUrl: 'views/home.html'
       }).
-       when('/blog-node', {
-        templateUrl: 'views/blog-node.html'
-      }).
       when('/:name', {
-        templateUrl: 'views/home.html',
-        controller: 'PagesController'
+        templateUrl: function($routeParams) {
+               return 'views/' + $routeParams.name + '.html';
+             },
       }).
       otherwise({
         redirectTo: '/'
       });
   });
+
+
+
