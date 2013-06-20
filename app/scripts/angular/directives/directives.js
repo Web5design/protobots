@@ -21,17 +21,17 @@ angular.module('ngProtobotsApp')
         // GET template at this point, since we cannot pre-load as before.
         var getTemplate = $http.get('/views/layouts/' + tAttr.file + '.html');
 
-        // This will contain all the HTML blocks from the "transcluded" section.
-        var _blocks = {};
+        // This will contain all the HTML regions from the "transcluded" section.
+        var _regions = {};
 
-        angular.forEach(tEl.children(), function(block) {
+        angular.forEach(tEl.children(), function(region) {
           // wrap tEl.children() elements in jqLite
-          var _block = angular.element(block);
+          var _region = angular.element(region);
 
-          // if it's a block element, save the HTML and remove the node.
-          if(_block.attr("block")) {
-            _blocks[_block.attr("block")] = _block.html();
-            _block.remove();
+          // if it's a region element, save the HTML and remove the node.
+          if(_region.attr("region")) {
+            _regions[_region.attr("region")] = _region.html();
+            _region.remove();
           }
         });
 
@@ -47,14 +47,14 @@ angular.module('ngProtobotsApp')
             // Wrap template in jqLite...
             newTemplate = angular.element(template.data);
 
-            angular.forEach(newTemplate.find('*'), function(block) {
+            angular.forEach(newTemplate.find('*'), function(region) {
               // wrap newTemplate.children() in jqLite.
-              var _block = angular.element(block);
+              var _region = angular.element(region);
 
-              // if it's a block element AND we have a "transcluded" HTML fragment,
+              // if it's a region element AND we have a "transcluded" HTML fragment,
               // replace HTML.
-              if(_block.attr("block") && angular.isDefined(_blocks[_block.attr("block")])) {
-                _block.html(_blocks[_block.attr("block")]);
+              if(_region.attr("region") && angular.isDefined(_regions[_region.attr("region")])) {
+                _region.html(_regions[_region.attr("region")]);
               }
             });
 

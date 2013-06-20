@@ -1,15 +1,24 @@
 <layout class="blog" file="blog-node-layout">
 
-  <div block="header">
+  <partial file="site/primary-nav"> </partial>
+
+  <div region="header">
     <h1>Welcome to Your Blog. Enjoy Reading Some Awesome News</h1>
   </div>
 
-  <div block="content">
+  <div region="content">
     <partial file="blog/blog-post"></partial>
   </div>
 
-  <div block="sidebar-first">
+  <div region="sidebar-first">
     <partial file="blog/blog-sidebar" repeating="2"></partial>
+    <hr>
+    <partial file="blog/blog-sidebar" repeating="4"></partial>
+  </div>
+
+  <div region="footer">
+    <partial file="site/footer-navigation"></partial>
+    <partial file="site/legal-text"></partial>
   </div>
 
 </layout>
