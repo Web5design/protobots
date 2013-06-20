@@ -1,24 +1,23 @@
 <layout file="home-layout">
 
-    <partial file="site/primary-nav"> </partial>
-
-    <div region="header">
+    <region name="header">
+      <partial file="site/primary-nav"> </partial>
       <partial file="site/site-name"> </partial>
       <partial file="home/introduction"> </partial>
-    </div>
+    </region>
 
-    <div region="main">
+    <region name="main">
       <partial file="home/what-is-cameo" repeating="3"> </partial>
       <partial file="home/why-cameo" repeating="3"> </partial>
       <partial file="home/how-cameo-works" repeating="3"> </partial>
       <partial file="home/recent-blog-entries" repeating="2"> </partial>
       <partial file="home/newsletter-signup"> </partial>
-    </div>
+    </region>
 
-    <footer region="footer">
+    <region name="footer">
       <partial file="site/footer-navigation"> </partial>
       <partial file="site/legal-text"> </partial>
-    </footer>
+    </region>
 
 
 </layout>

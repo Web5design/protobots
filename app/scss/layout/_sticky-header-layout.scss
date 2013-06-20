@@ -1,10 +1,21 @@
 #sticky-header {
   top: 0;
-  left: 0;
-  right: 0;
+  left: -75%;
+  width: 75%;
   position: fixed;
+  @include transition-property(all);
+  @include transition-duration(.2s);
+  @include transition-timing-function(ease-both);
+
+  &.open{
+    left: 0;
+  }
+  @include respond-to($medium) {
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
   .primary-navigation {
     @include container;
   }
 }
-

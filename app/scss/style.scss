@@ -55,16 +55,8 @@ a:hover{
 	}
 }
 
-//remove padding & bullets from sidevar UL
-.sidebar-first ul{
-		list-style: none;
-		padding-left: 0;
-		li{
-			line-height:1.4em;
-			margin-bottom: 1.4em;
-		}
-	}
-	
+
+
 .avatar-image img{
-        border-radius:50%;
-      } 
+  border-radius:50%;
+}

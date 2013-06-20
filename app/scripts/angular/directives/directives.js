@@ -29,8 +29,8 @@ angular.module('ngProtobotsApp')
           var _region = angular.element(region);
 
           // if it's a region element, save the HTML and remove the node.
-          if(_region.attr("region")) {
-            _regions[_region.attr("region")] = _region.html();
+          if(_region.prop("tagName") == "REGION") {
+            _regions[_region.attr("name")] = _region.html();
             _region.remove();
           }
         });
@@ -54,6 +54,7 @@ angular.module('ngProtobotsApp')
               // if it's a region element AND we have a "transcluded" HTML fragment,
               // replace HTML.
               if(_region.attr("region") && angular.isDefined(_regions[_region.attr("region")])) {
+
                 _region.html(_regions[_region.attr("region")]);
               }
             });

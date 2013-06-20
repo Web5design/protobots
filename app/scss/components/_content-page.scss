@@ -1,13 +1,13 @@
-.content-page-sidebar{
-}
 
-.content-page .sidebar-first ul {
+%sidebar-block ul {
+  clear: both;
   background: $lightest-grey;
   padding: 0 $gutter-width;
   margin: 2em 0;
   border-radius: 8px;
   border: solid 1px $light-grey;
   li{
+    list-style: none;
   	border-bottom: solid 1px $light-grey;
   	&:last-child{
   		border-bottom: none;
@@ -26,4 +26,14 @@
   	color:$dark-grey;
     font-weight: bold;
   }
+}
+
+
+.content-page .sidebar-first {
+  @extend %sidebar-block;
+}
+
+
+.content-page-sidebar{
+  @extend %sidebar-block;
 }
