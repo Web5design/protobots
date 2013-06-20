@@ -12,7 +12,7 @@
 		@include respond-to($small){
 			font-size: $h1-font-size;
 		}
-		margin: 0 auto;
+		margin: 0 auto; 
 		max-width: 20em;
 	}
 }
@@ -39,23 +39,11 @@
 	}
 }
 
-p.published-on-date{
+.date{
 		margin: 0em 0 0 0;
 		color: $med-grey;
 		font-size: .8em;
-		font-style: italic;
+		font-style: italic; 
 	}
 
-.blog-sidebar{
-	border-bottom: solid 1px $light-grey;
-	padding-bottom: 2em;
-	ul{
-		list-style: none;
-		padding-left: 0;
-		li{
-			line-height:1.4em;
-			margin-bottom: 1.4em;
-		}
-	}
-}
 

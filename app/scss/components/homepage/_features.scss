@@ -1,15 +1,14 @@
 .why-cameo, .what-is-cameo, .how-cameo-works{
   padding: 2em 0 5em 0;
-} 
-
-.features{
-	h2{
-		text-align:center;
-		margin-bottom:1em;
-	}
-	h3{
-		font-size: $h4-font-size;
-	}
+  
+  h2{
+  	text-align:center;
+  	margin-bottom:1em;
+  }
+  h3{
+  	font-size: $h4-font-size;
+    margin-bottom: 0;
+  }
 }
 
 .feature-block{
@@ -25,5 +24,5 @@
 }
 
 .feature-cta{
-  text-align:center;  
+  text-align:center;
 }

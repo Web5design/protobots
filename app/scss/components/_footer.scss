@@ -1,3 +1,13 @@
+.footer{
+	border-top: solid 1px $light-grey;
+	margin-top: 2em;
+}
+
+.home .footer{
+	border-top: none;
+	margin-top: 0;
+}
+
 .footer-navigation{
 	ul{
 		padding:2em 0;

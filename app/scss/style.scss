@@ -1,7 +1,7 @@
 @import "compass";
 @import "susy";
-@import "global/variables";
 @import "global/functions";
+@import "global/variables";
 @import "global/extends/**/*";
 @import "global/mixins/**/*";
 @import "base/vendor/**/*";
@@ -10,19 +10,15 @@
 @import "components/**/*";
 @import "layout/**/*";
 
-body{
-	background: $light-grey;
-}
-
 //animated links
 a{
-	color: #13A7C7;
+	color: $link-blue;
 	text-decoration: none;
 }
 
 a:hover{
 	transition: all 0.2s ease-in 0s;
-	color: #10869f
+	color: $link-dark-blue;
 }
 
 .button{
@@ -58,3 +54,17 @@ a:hover{
 		};
 	}
 }
+
+//remove padding & bullets from sidevar UL
+.sidebar-first ul{
+		list-style: none;
+		padding-left: 0;
+		li{
+			line-height:1.4em;
+			margin-bottom: 1.4em;
+		}
+	}
+	
+.avatar-image img{
+        border-radius:50%;
+      } 

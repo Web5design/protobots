@@ -1,4 +1,6 @@
 .recent-blog-entries {
+  @include clearfix;
+  @include span-columns(12);
   padding-top:2em;
   @include bleed($grid-padding);
   .blog-entry {
@@ -8,8 +10,8 @@
       &:last-child { @include span-columns(6 omega, 12); }
     }
   }
-  .teaser-image {
-    @include span-columns(2,7);
+  .avatar-image {
+    @include span-columns(1,7);
   }
 
   .excerpt {
