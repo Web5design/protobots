@@ -123,13 +123,13 @@ module.exports = function (grunt) {
     compass: {
       dist: {
         options: {
-          config: '<%= yeoman.app %>/.config.rb',
+          config: '<%= yeoman.app %>/config.rb',
           force: true
         }
       },
       server: {
         options: {
-          config: '<%= yeoman.app %>/.config.rb',
+          config: '<%= yeoman.app %>/config.rb',
           debugInfo: true
         }
       }

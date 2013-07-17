@@ -20,15 +20,14 @@ $light-grey: #ddd;
 $lightest-grey: #eee;
 
 //Font Stacks
-$clearsans: "ClearSans", helvetica, georgia, serif;
-$helvetica: helvetica, georgia, serif;
+$sans-serif: helvetica, arial, sans-serif;
 
 //Typography
-$copy-font-family: $helvetica;
+$copy-font-family: $sans-serif;
 $copy-font-size: 16px;
 $copy-line-height: 1.8;
 
-$header-font-family: $clearsans;
+$header-font-family: $sans-serif;
 $header-font-weight: bold;
 $header-font-style: normal;
 $header-font-color: #222;
@@ -39,10 +38,9 @@ $header-top-margin: .2em;
 $header-bottom-margin: .5em;
 $header-text-rendering: optimizeLegibility;
 
-// We use these to control header font sizes
- $h1-font-size: pem(44px);
- $h2-font-size: pem(37px);
- $h3-font-size: pem(27px);
- $h4-font-size: pem(23px);
- $h5-font-size: pem(18px);
- $h6-font-size: 1em;
+$h1-font-size: pem(44px);
+$h2-font-size: pem(37px);
+$h3-font-size: pem(27px);
+$h4-font-size: pem(23px);
+$h5-font-size: pem(18px);
+$h6-font-size: 1em;

@@ -6,15 +6,8 @@ h1, h2, h3, h4, h5, h6{
   color:       $header-font-color;
   line-height: $header-line-height;
   letter-spacing: $header-letter-spacing;
-}
-
-h1, h2, {
   font-weight: $header-font-weight;
-}
 
-h3, h4, h5, h6, {
-  font-weight: 400;
-  margin-bottom: .5em;
 }
 
 h1 { font-size:  $h1-font-size; }
