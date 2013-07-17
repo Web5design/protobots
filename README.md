@@ -15,7 +15,7 @@ $ sudo npm install
 This will download all of the appropriate javascript packages needing to create the server. Once this is complete you can run "grunt server" and Protobots will spin up a grunt server and open up the start page for you.
 
 ## Editing the Home Page
-To edit the start page in Protobots simply add valid markup to the views/home.html file. All pages inherit the basic HTML structure of index.html which includes <html> <head> <body> and a <div class="page"> page wrapper.
+To edit the start page in Protobots simply add valid markup to the views/home.html file. All pages inherit the basic HTML structure of index.html which includes ```<html>```  ```<head>```  ```<body>``` and a ```<div class="page">``` page wrapper.
 
 ## Partials
 To create a HTML snippet or "partial", just create a new html file in the views/partials directory. The partial may only contain a single parent element, but can have as many child elements as needed.
@@ -69,7 +69,7 @@ To convert this to a Protobots template file you will simply add a "region" attr
 ```
 ### Using a Layout
 
-Going back to our home.html page, there are 2 things we'll want to do in order to start using this template. First off we declare which template we want to inherit using Protobot's <template> directive:
+Going back to our home.html page, there are 2 things we'll want to do in order to start using this template. First off we declare which template we want to inherit using Protobot's ```<template>``` directive:
 
 ```html
 <layout file="home_layout">
@@ -82,7 +82,7 @@ Going back to our home.html page, there are 2 things we'll want to do in order t
 </layout>
 ```
 
-Secondly we need to place each of our markup and partials into a region using Protobot's <region> directive:
+Secondly we need to place each of our markup and partials into a region using Protobot's ```<region>``` directive:
 
 ```html
 <layout file="home_layout">
