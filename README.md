@@ -82,7 +82,7 @@ Going back to our home.html page, there are 2 things we'll want to do in order t
 </layout>
 ```
 
-Secondly we need to place each of our markup and partials into a region using Protobot's ```<region>``` directive:
+Secondly we need to place all of our markup and partials into a region using Protobot's ```<region>``` directive:
 
 ```html
 <layout file="home_layout">
