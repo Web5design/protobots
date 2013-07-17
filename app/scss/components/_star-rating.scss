@@ -1,0 +1,51 @@
+.content {
+  
+  .rating-title {
+    font-size: 0.875em;
+    display: inline-block;
+  }
+  
+  .star-rating {
+    
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    margin-left: .25em;
+    
+    li {
+      display: inline-block;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      a {
+        display: block;
+        border-bottom: none;
+        &:hover {
+          .star-svg {
+            fill: $orange;
+          }
+        }
+        
+      }
+      
+      .full {
+        fill: $orange;
+      }
+    }
+    
+  }
+  
+  .comment-meta {
+    position: relative;
+    padding-right: 120px;
+    .rating {
+      position: absolute;
+      top: 0;
+      right: 0;
+      li {
+        margin: 0;
+      }
+    }
+  }
+  
+}

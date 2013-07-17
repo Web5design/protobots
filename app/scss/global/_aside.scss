@@ -1,0 +1,63 @@
+.content-secondary {
+
+  padding-top: 2em;
+
+  .block {
+    margin-bottom: 2.5em;
+  }
+
+  .block-title {
+    font-size: 1em;
+    line-height: 1.125;
+    text-transform: uppercase;
+  }
+
+  p, li {
+    font-size: 0.875em;
+  }
+
+  ul,
+  ol {
+    padding: 0;
+    padding-left: 1.35em;
+  }
+
+  .fancy-list {
+    padding: 0;
+    margin: 0;
+
+    li {
+
+      list-style: none;
+      margin-top: 2px;
+      background: rgba(235,235,235,1);
+
+      &:hover {
+        box-shadow: inset 0px 1px 12px rgba(0,0,0,0.06);
+      }
+
+      a {
+        padding: .75em;
+        display: block;
+        font-weight: bold;
+      }
+
+      .download {
+        padding-left: 2.25em;
+        background: url(../img/icon_download.svg) no-repeat .75em center;
+      }
+
+      span {
+        display: block;
+        padding: .75em;
+      }
+
+    }
+
+    li:nth-child(even) {
+      background: rgba(235,235,235,.6);
+    }
+
+  }
+
+}

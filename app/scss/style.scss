@@ -1,62 +1,56 @@
+// Compass Imports
 @import "compass";
 @import "susy";
-@import "global/functions";
+
+
+// Vendor Imports
+@import "vendor/normalize";
+
+
+// Global Imports
+@import "global/mixins";
 @import "global/variables";
-@import "global/extends/**/*";
-@import "global/mixins/**/*";
-@import "base/vendor/**/*";
-@import "base/html/**/*";
-@import "base/page/**/*";
-@import "components/**/*";
-@import "layout/**/*";
-
-//animated links
-a{
-	color: $link-blue;
-	text-decoration: none;
-}
-
-a:hover{
-	transition: all 0.2s ease-in 0s;
-	color: $link-dark-blue;
-}
-
-.button{
-  	margin-top:1em;
-  	height:3em;
-  	padding:0 5em;
-}
-
-.page{
-	box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.10);
-}
-
-//header bits
-.header{
-	background:$lightest-grey;
-	h1{
-		text-align:center
-	}
-	h2{
-		@include respond-to($medium){
-			margin-top:0;
-		}
-	}
-}
-
-.introduction{
-	padding-bottom:3em;
-	.intro-text{
-		text-align:center;
-		@include respond-to($medium) {
-			padding-left:2em;
-			text-align:left;
-		};
-	}
-}
+@import "global/typography";
+@import "global/styleguide";
+@import "global/responsive-nav";
+@import "global/aside";
+@import "global/site-header";
+@import "global/footer";
+@import "global/forms";
+@import "global/pagination";
+@import "global/reveals";
 
 
+// Layout Imports
+@import "layout/one-sidebar-layout";
+@import "layout/home-layout";
+@import "layout/no-sidebar-layout";
+@import "layout/no-sidebar-narrow-layout";
 
-.avatar-image img{
-  border-radius:50%;
-}
+// Component Imports
+@import "components/logo";
+@import "components/navigation";
+@import "components/search";
+@import "components/hero";
+@import "components/action-links";
+@import "components/messages";
+@import "components/player";
+@import "components/content";
+@import "components/article-footer";
+@import "components/collection-info";
+@import "components/star-rating";
+@import "components/comments";
+@import "components/highlights";
+@import "components/nav-social";
+@import "components/billboard";
+@import "components/testimonials";
+@import "components/client-list";
+@import "components/browse";
+@import "components/progress-bar";
+@import "components/browse-filters";
+@import "components/tables";
+@import "components/anchor-menu";
+@import "components/pricing";
+@import "components/membership-benefits";
+@import "components/checkout";
+@import "components/checkout-progress";

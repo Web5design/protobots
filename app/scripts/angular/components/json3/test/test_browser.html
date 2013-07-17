@@ -35,7 +35,7 @@
           "paths": { "json": "../lib/json3" },
           // Thwart aggressive resource caching. RequireJS only.
           "urlArgs": "async=" + (+new Date())
-        }, ["json", "test_json3"], function (JSON3, testSuite) {
+        }, ["json", "testjson3"], function (JSON3, testSuite) {
           // Test asynchronous module loading via RequireJS/`curl.js`.
           testSuite.addTest("Asynchronous Module Definition", function (test) {
             setTimeout(function () {
@@ -46,7 +46,7 @@
         });
       } else {
         document.write('<script src="../lib/json3.js"><\/script>');
-        document.write('<script src="test_json3.js"><\/script>');
+        document.write('<script src="testjson3.js"><\/script>');
         window.onload = function () {
           JSON.testSuite.run();
         };

@@ -1,0 +1,30 @@
+.site-name {
+
+  float: left;
+  margin: 0;
+  padding: 0;
+  margin-top: .40em;
+  margin-bottom: .30em;
+
+  a {
+    display: block;
+    width: 167px;
+    height: 35px;
+    background: url(../img/drupalizeme.svg) no-repeat top left;
+    background-size: contain;
+    text-indent: -99999px;
+    overflow: hidden;
+  }
+
+}
+
+////////////////////////////
+// 54em min-width (864px) //
+////////////////////////////
+
+@media screen and (min-width: 54em) {
+  .site-name {
+    margin-top: 32px;
+    margin-bottom: 23px;
+  }
+}

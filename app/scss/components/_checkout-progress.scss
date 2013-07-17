@@ -1,0 +1,68 @@
+.content {
+  .checkout-progress {
+    border-top: 1px solid $light-border;
+    border-bottom: 1px solid $light-border;
+    padding: .5em 0;
+    li {
+      display: inline;
+      margin-left: 0;
+      margin-right: .5em;
+      font-size: .6875em;
+      text-transform: uppercase;
+      color: $text-light;
+      &:after {
+        content: '→';
+        margin-left: 4px;
+      }
+      &:last-child:after {
+        content: ' ';
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.create-account {
+  .checkout-progress {
+    .one {
+      font-weight: bold;
+      color: $orange;
+    }
+  }
+}
+
+.payment {
+  .checkout-progress {
+    .one,
+    .two {
+      font-weight: bold;
+      color: $orange;
+    }
+  }
+}
+
+.thanks {
+  .checkout-progress {
+    .one,
+    .two,
+    .three {
+      font-weight: bold;
+      color: $orange;
+    }
+  }
+}
+
+
+////////////////////////////
+// 30em min-width (480px) //
+////////////////////////////
+
+@media screen and (min-width: 30em) {
+  .content {
+    .checkout-progress {
+      li {
+        font-size: .875em;
+      }
+    }
+  }
+}

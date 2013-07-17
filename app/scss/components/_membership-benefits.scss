@@ -1,0 +1,94 @@
+.membership-benefits {
+  .block-title {
+    text-align: center;
+    font-size: 1.125em;
+    text-transform: uppercase;
+  }
+  .benefits-list {
+    padding: 0;
+    li {
+      list-style: none;
+      padding-left: 2em;
+      @include box-sizing(border-box);
+      background: url(../img/icon_check-green.svg) no-repeat left .35em;
+      line-height: 1.35;
+      margin: 1em 0;
+    }
+  }
+}
+
+
+////////////////////////////
+// 38em min-width (576px) //
+////////////////////////////
+
+@media screen and (min-width: 38em) {
+
+  .membership-benefits {
+    @include clearfix;
+    .benefits-list {
+      li {
+        float: left;
+        width: 49%;
+        margin: .75em 0;
+        margin-right: 2%;
+        &:nth-child(even) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+}
+
+
+////////////////////////////
+// 48em min-width (768px) //
+////////////////////////////
+
+@media screen and (min-width: 48em) {
+
+  .membership-benefits {
+    padding-bottom: 2em;
+    .benefits-list {
+      li {
+        width: 32%;
+        margin: .75em 0;
+        margin-right: 2%;
+        &:nth-child(even) {
+          margin-right: 2%;
+        }
+        &:nth-child(3n+3) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+}
+
+
+////////////////////////////
+// 64em min-width (1024px) //
+////////////////////////////
+
+@media screen and (min-width: 64em) {
+
+  .membership-benefits {
+    padding-bottom: 2em;
+    .benefits-list {
+      li {
+        width: 30%;
+        margin: .75em 0;
+        margin-right: 5%;
+        &:nth-child(even) {
+          margin-right: 5%;
+        }
+        &:nth-child(3n+3) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+}

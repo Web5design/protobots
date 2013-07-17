@@ -1,0 +1,161 @@
+.checkout {
+  .hero {
+    background: $light-background;
+  }
+  .content {
+    padding-bottom: 2em;
+    .form-item {
+      margin-top: 1.25em;
+    }
+    label {
+      text-transform: uppercase;
+      margin-bottom: .25em;
+    }
+    label.check {
+      text-transform: none;
+      margin-bottom: 0;
+    }
+    .plan {
+      ul {
+        margin: 0;
+        li {
+          display: inline-block;
+          margin-right: .5em;
+        }
+      }
+    }
+    .price {
+      font-style: italic;
+    }
+  }
+
+  .ccinfo {
+    .ccnumber-form,
+    .ccv-form,
+    .expdate {
+      display: inline-block;
+      margin-right: .5em;
+      margin-top: .75em;
+    }
+    .expdate {
+      margin-right: 0;
+    }
+  }
+  .secure {
+    padding-left: 12px;
+    font-size: .875em;
+    background: url(../img/icon_lock.svg) no-repeat left center;
+    color: $text-light;
+    white-space: nowrap;
+  }
+
+  .cost {
+    @include clearfix;
+  }
+
+  .amount {
+    display: block;
+    background: $gold-light;
+    padding: 1em 1.5em;;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .charge-amount {
+    display: block;
+    font-size: 3em;
+    line-height: 1;
+    letter-spacing: -.05em;
+    color: $headline;
+  }
+
+  .pricing-info {
+    font-size: .75em;
+    text-transform: uppercase;
+  }
+
+  .payment-info {
+    background: $light-background;
+    border-top: 1px solid $light-border;
+    padding: 1em;
+  }
+
+  .card-icons {
+    img {
+      display: block;
+    }
+  }
+
+  .content {
+    .ccinfo {
+      margin-top: 0;
+    }
+  }
+
+  .global-footer {
+    background: none;
+  }
+
+  &.thanks {
+    .page-title {
+      margin-top: 1em;
+    }
+    .main-content {
+      padding-top: 0;
+    }
+  }
+
+  .your-code {
+    text-align: center;
+    background: $gold-light;
+    padding: 1.5em;
+    margin-top: 1.5em;
+    label,
+    code {
+      display: block;
+      line-height: 1.25;
+    }
+    code {
+      font-size: 1.3125em;
+    }
+  }
+
+}
+
+////////////////////////////
+// 40em min-width (640px) //
+////////////////////////////
+
+@media screen and (min-width: 32em) {
+
+  .checkout {
+    .content {
+      padding-bottom: 5em;
+    }
+    .payment-info {
+      padding: 1.5em;
+    }
+    .amount {
+      display: inline-block;
+      float: right;
+      border: none;
+    }
+  }
+
+}
+
+////////////////////////////
+// 48em min-width (768px) //
+////////////////////////////
+
+@media screen and (min-width: 48em) {
+
+  .checkout {
+    &.thanks {
+      .content-secondary {
+        padding-top: 6em;
+      }
+    }
+  }
+
+}

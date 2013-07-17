@@ -1,0 +1,52 @@
+.global-footer {
+
+  background: $light-background;
+  border-top: 1px solid $light-border;
+  padding-top: 1em;
+  padding-bottom: 3em;
+  
+  a {
+    font-size: 1em;
+    padding: .5em 0;
+    display: block;
+  }
+  
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .copyright {
+    font-size: .75em;
+  }
+  
+}
+
+
+////////////////////////////
+// 48em min-width (768px) //
+////////////////////////////
+
+@media screen and (min-width: 48em) {
+
+  .global-footer {
+    text-align: center;
+    li {
+      display: inline-block;
+      &:after {
+        content: '//';
+        color: $light-border;
+        margin: 0 .5em;
+      }
+      &:last-child:after  {
+        content: '';
+      }
+    }
+    a {
+      font-size: .875em;
+      display: inline-block;
+    }
+  }
+
+}

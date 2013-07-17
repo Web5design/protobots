@@ -1,0 +1,84 @@
+.no-sidebar {
+  .main-content {
+    padding: 0;
+    margin-bottom: 0;
+    @include clearfix;
+    .content {
+      @include container;
+      @include span-columns(6 omega,6);
+      @include transition (padding 0.25s ease-in 0s);
+      background: $light-background;
+    }
+  }
+}
+
+
+
+////////////////////////////
+// 48em min-width (768px) //
+////////////////////////////
+
+@media screen and (min-width: 48em) {
+  .no-sidebar {
+    .main-content {
+      .content {
+        @include span-columns(6 omega,6);
+      }
+    }
+  }
+}
+
+
+/////////////////////////////
+// 74em min-width (1184px) //
+/////////////////////////////
+
+@media screen and (min-width: 74em) {
+  
+  $total-columns: 12;
+  $column-width: 4.649122807018%; // 56px / 1184px
+  $gutter-width: 2.631578947368%; // 34px / 1184px
+  $grid-padding: 7.631578947368%; // 68px / 1184px
+  
+  .no-sidebar {
+    .main-content {
+      .content {
+        @include container;
+        @include span-columns(12 omega,12);
+        @include transition (padding 0.25s ease-in 0s);
+      }
+    }
+  }
+  
+}
+
+
+/////////////////////////////
+// 94em min-width (1504px) //
+/////////////////////////////
+
+@media screen and (min-width: 86em) {
+  .no-sidebar {
+    .main-content {
+      .content {
+        @include pad(1.5,1.5);
+      }
+    }
+  }
+}
+
+//////////////////////////////
+// 100em min-width (1600px) //
+//////////////////////////////
+
+@media screen and (min-width: 100em) {
+
+  .no-sidebar {
+    .main-content {
+      .content {
+        @include pad(2,2);
+      }
+    }
+  }
+
+}

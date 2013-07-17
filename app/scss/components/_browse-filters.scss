@@ -1,0 +1,135 @@
+.filters {
+  text-align: left;
+  @include clearfix;
+  .label {
+    font-size: .75em;
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+  ul {
+    padding: 0;
+    margin-top: 1.5em;
+    &:first-child {
+      margin-top: 0;
+    }
+    li {
+      list-style: none;
+      font-size: .875em;
+      display: inline-block;
+      margin-left: 0;
+      margin-right: .25em;
+      margin-bottom: .5em;
+      a {
+        display: inline-block;
+        margin: 0;
+        position: relative;
+        padding: .5em .75em;
+        padding-right: 2em;
+        font-weight: bold;
+        background: white;
+        background-size: 14px 14px;
+        border-radius: 5px;
+        border-bottom: none;
+        box-shadow: 0 1px 5px rgba(0,0,0,.05);
+        &:hover {
+          box-shadow: 0 1px 5px rgba(0,0,0,.2);
+          border-bottom: none;
+        }
+        &:after {
+          content: ' ';
+          width: 14px;
+          height: 14px;
+          margin-top: -7px;
+          position: absolute;
+          right: .7em;
+          top: 50%;
+          background: url(../img/icon_plus.svg) no-repeat center;
+          background-size: contain;
+        }
+        &.active {
+          color: $text;
+          background-color: #e6e6e6;
+          box-shadow: 0 1px 0 rgba(255,255,255,.75), inset 0 1px 6px rgba(0,0,0,.15);
+          &:hover {
+            background-color: #d4d4d4;
+          }
+          &:after {
+            background: url(../img/icon_x.svg) no-repeat center;
+          }
+        }
+        &.show-filters {
+          &:after {
+            background: url(../img/icon_arrow-down_circle.svg) no-repeat center;
+          }
+          &.open:after {
+            background: url(../img/icon_arrow-up_circle.svg) no-repeat center;
+          }
+        }
+      }
+    }
+  }
+  .categories {
+    margin-bottom: .25em;
+  }
+  .full-list {
+    display: none;
+    clear: both;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: .5em;
+    border-top: 1px solid $light-border;
+    box-shadow: inset 0px 1px 0px rgba(255,255,255,.65);
+  }
+}
+
+
+////////////////////////////
+// 42em min-width (768px) //
+////////////////////////////
+
+@media screen and (min-width: 38em) {
+
+  .filters {
+
+    .types,
+    .drupal-versions,
+    .categories {
+      display: inline-block;
+      float: left;
+      margin-right: 2em;
+      margin-top: 0;
+    }
+    .categories {
+      display: block;
+      clear: both;
+      margin-bottom: 0;
+
+    }
+
+  }
+
+}
+
+
+////////////////////////////
+// 56em min-width (768px) //
+////////////////////////////
+
+@media screen and (min-width: 56em) {
+
+  .filters {
+
+    .types,
+    .drupal-versions {
+      margin-bottom: 0;
+    }
+
+    .categories {
+      display: inline-block;
+      float: left;
+      clear: none;
+    }
+
+  }
+
+}

@@ -1,0 +1,38 @@
+.player {
+  
+  width: 100%;
+  
+  iframe {
+    max-width: 100%;
+    border: none;
+  }
+  
+}
+
+.report-problem {
+  font-size: 0.875em;
+  margin-top: 1em;
+}
+
+
+
+/////////////////////////////
+// 54em min-width (864px) //
+/////////////////////////////
+
+@media screen and (min-width: 54em) {
+  
+  .player-options {
+    position: relative;
+  }
+  .report-problem {
+    width: columns(6,12);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.25em 0;
+    text-align: right;
+    margin-top: 0;
+  }
+  
+}

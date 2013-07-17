@@ -1,0 +1,94 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content {
+  
+  figure {
+    margin: 1em 0;
+    figcaption {
+      h1, h2, h3, h4, h5, h6 {
+        margin-top: .5em;
+      }
+      p {
+        font-size: .875em;
+        margin: .5em 0;
+        line-height: 1.25;
+      }
+    }
+  }
+  
+  figure.fancy {
+    padding: .5em;
+    border: 1px solid $light-border;
+    background: white;
+    box-shadow: 0px 1px 9px rgba(0,0,0,.05);
+    @include box-sizing(border-box);
+  }
+  
+}
+
+////////////////////////////
+// 48em min-width (768px) //
+////////////////////////////
+
+@media screen and (min-width: 48em) {
+  
+  .content {
+    
+    .left {
+      float: left;
+      margin-right: 1em;
+    }
+    
+    .right {
+      float: right;
+      margin-left: 1em;
+    }
+    
+    .half {
+      max-width: 50%;
+      margin-top: .5em;
+    }
+    
+    .third {
+      max-width: 50%;
+      margin-top: .5em;
+    }
+    
+  }
+  
+}
+
+/////////////////////////////
+// 74em min-width (1184px) //
+/////////////////////////////
+
+@media screen and (min-width: 74em) {
+  
+  .content {
+    
+    .left {
+      margin-right: 2em;
+    }
+    
+    .right {
+      margin-left: 2em;
+    }
+    
+    figure.fancy {
+      padding: 1em;
+    }
+    
+    .half {
+      max-width: 50%;
+    }
+    
+    .third {
+      max-width: 33%;
+    }
+    
+  }
+  
+}

@@ -1,0 +1,93 @@
+#testimonials {
+  padding-top: 2em;
+  padding-bottom: 0;
+  text-align: center;
+  position: relative;
+  .next-link {
+    display: block;
+    position: absolute;
+    top: -1.40625em;
+    margin-left: -1.40625em;
+    border-radius: 50%;
+    left: 50%;
+    width: 2.8125em;
+    height: 2.8125em;
+    background: url(../img/icon_arrow-down_blue.svg) no-repeat center center, $light-background;
+    text-indent: -99999px;
+    z-index: 1;
+    border-bottom: none;
+    &:hover {
+      background: url(../img/icon_arrow-down_white.svg) no-repeat center center, $orange;
+      border-bottom: none;
+    }
+  }
+  .block-title {
+    font-size: 1.125em;
+    text-transform: uppercase;
+    padding-left: 3.6em;
+    padding-right: 3.6em;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../img/icon_stars.svg) no-repeat left center, url(../img/icon_stars.svg) no-repeat right center;
+  }
+  blockquote {
+    margin: 0;
+    padding: 0;
+    border: none;
+    p {
+      font-size: 1.25em;
+      font-style: italic;
+      font-family: $serif;
+      margin: .25em 0;
+    }
+    footer {
+      font-size: 0.875em;
+      .organization {
+        font-weight: bold;
+        &:before {
+          content: '//';
+          margin: 0 .75em;
+          color: $light-border;
+        }
+      }
+    }
+  }
+  .testimonials-player {
+    margin: 1.5em 0;
+  }
+}
+
+
+////////////////////////////
+// 54em min-width (864px) //
+////////////////////////////
+
+@media screen and (min-width: 54em) {
+
+  #testimonials {
+    padding-top: 3em;
+    blockquote {
+      @include pad(1,1);
+      p {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+}
+
+
+/////////////////////////////
+// 64em min-width (1024px) //
+/////////////////////////////
+
+@media screen and (min-width: 64em) {
+
+  #testimonials {
+    blockquote {
+      @include pad(2,2);
+    }
+  }
+
+}

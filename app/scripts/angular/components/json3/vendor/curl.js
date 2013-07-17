@@ -962,7 +962,7 @@
 	// 1. the files are running un-compressed (Google Closure or Uglify)
 	// 2. the overriding module was compressed with curl.js
 	// Compiling curl and the overriding module separately won't work.
-	cache['curl/_privileged'] = {
+	cache['curl/privileged'] = {
 		'core': core,
 		'cache': cache,
 		'cfg': userCfg,

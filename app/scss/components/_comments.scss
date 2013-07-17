@@ -1,0 +1,27 @@
+.comments {
+  
+  .comments-list {
+  
+    padding: 0;
+    margin: 0;
+    
+    li {
+      list-style: none;
+      margin-top: 2em;
+      margin-left: 0;
+    }
+    
+    .comment-meta {
+      font-size: .875em;
+      font-weight: bold;
+    }
+    
+    .comment-body {
+      font-family: $serif;
+      font-style: italic;
+      font-size: 1.125em;
+    }
+    
+  }
+  
+}

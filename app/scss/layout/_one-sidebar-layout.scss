@@ -1,0 +1,165 @@
+////////////////
+// Grid Stuff //
+////////////////
+
+$total-columns: 6;
+$column-width: 9.375%;  // 30px / 320px
+$gutter-width: 6.25%;   // 20px / 320px
+$grid-padding: $gutter-width;
+
+
+html {
+  width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  display: block;
+  @include border-box-sizing;
+}
+
+body {
+  width: 100%;
+  display: block;
+  @include border-box-sizing;
+}
+
+.global-header,
+.hero,
+.main-content,
+.global-footer {
+  @include container;
+  @include span-columns(6 omega,6);
+  @include transition (padding 0.25s ease-in 0s);
+}
+
+.main-content {
+  padding-top: 2em;
+}
+
+
+
+////////////////////////////
+// 30em min-width (480px) //
+////////////////////////////
+
+@media screen and (min-width: 30em) {
+  
+}
+
+
+////////////////////////////
+// 48em min-width (768px) //
+////////////////////////////
+
+$total-columns: 10;
+$column-width: 5.703125%;  // 43.8px / 768px
+$gutter-width: 3.90625%;   // 30px / 768px
+$grid-padding: $gutter-width;
+
+@media screen and (min-width: 48em) {
+  
+  .one-sidebar {
+    
+    .main-content {
+      padding-top: 3em;
+      .content {
+        position: relative;
+        @include span-columns(6,10);
+        @include transition (padding 0s ease-in 0s);
+        padding-right: 1em;
+      }
+      .content-secondary {
+        @include span-columns(4 omega,10);
+      }
+    }
+    
+    &.author-bar {
+    
+      .main-content {
+        padding-top: 3em;
+        .content {
+          position: relative;
+          @include span-columns(6,10);
+          @include transition (padding 0s ease-in 0s);
+          padding-right: 1em;
+        }
+        .content-secondary {
+          @include span-columns(4 omega,10);
+        }
+      }
+      
+    }
+    
+  }
+  
+}
+
+
+/////////////////////////////
+// 74em min-width (1184px) //
+/////////////////////////////
+
+@media screen and (min-width: 74em) {
+  
+  $total-columns: 12;
+  $column-width: 4.649122807018%; // 56px / 1184px
+  $gutter-width: 2.631578947368%; // 34px / 1184px
+  $grid-padding: 7.631578947368%; // 68px / 1184px
+  
+  .global-header,
+  .hero,
+  .main-content,
+  .global-footer {
+    @include container;
+    @include span-columns(12,12);
+    @include transition (padding 0.25s ease-in 0s);
+  }
+  
+  .one-sidebar.author-bar {
+    
+    .main-content {
+      .content {
+        @include span-columns(9,12);
+        @include prefix(2);
+        @include transition (padding 0s ease-in 0s);
+        padding-right: 1.689189189189%; // 20px / 1184px
+      }
+      .content-secondary {
+        @include span-columns(3 omega,12);
+      }
+    }
+    
+  }
+  
+}
+
+
+/////////////////////////////
+// 86em min-width (1504px) //
+/////////////////////////////
+
+@media screen and (min-width: 86em) {
+  
+  .global-header,
+  .hero,
+  .main-content,
+  .global-footer {
+    @include pad(1.25,1.25);
+  }
+  
+}
+
+
+//////////////////////////////
+// 100em min-width (1600px) //
+//////////////////////////////
+
+@media screen and (min-width: 100em) {
+
+  .global-header,
+  .hero,
+  .main-content,
+  .global-footer {
+    @include pad(3,3);
+  }
+
+}

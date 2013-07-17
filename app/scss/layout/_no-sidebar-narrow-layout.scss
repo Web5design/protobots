@@ -1,0 +1,127 @@
+.no-sidebar-narrow {
+  .main-content {
+    padding: 0;
+    margin-bottom: 0;
+    @include clearfix;
+    .content {
+      @include container;
+      @include span-columns(6 omega,6);
+      @include transition (padding 0.25s ease-in 0s);
+    }
+  }
+  .global-header,
+  .global-footer {
+    @include container;
+    @include span-columns(6 omega,6);
+    @include transition (padding 0.25s ease-in 0s);
+  }
+}
+
+
+
+////////////////////////////
+// 48em min-width (768px) //
+////////////////////////////
+
+@media screen and (min-width: 48em) {
+  
+  .no-sidebar-narrow {
+    
+    .main-content {
+      .content {
+        @include container;
+        @include span-columns(6,6);
+        @include pad(2,2);
+      }
+    }
+    .global-header,
+    .global-footer {
+      @include container;
+      @include span-columns(6,6);
+      @include pad(2,2);
+    }
+    
+  }
+  
+}
+
+
+////////////////////////////
+// 52em min-width (832px) //
+////////////////////////////
+
+@media screen and (min-width: 52em) {
+  
+  .no-sidebar-narrow {
+    
+    .main-content {
+      .content {
+        @include container;
+        @include span-columns(8,8);
+        @include pad(3,3);
+      }
+    }
+    .global-header,
+    .global-footer {
+      @include container;
+      @include span-columns(8,8);
+      @include pad(3,3);
+    }
+    
+  }
+  
+}
+
+
+/////////////////////////////
+// 76em min-width (1216px) //
+/////////////////////////////
+
+@media screen and (min-width: 76em) {
+  
+  .no-sidebar-narrow {
+    
+    .main-content {
+      .content {
+        @include container;
+        @include span-columns(8,8);
+        @include pad(4,4);
+      }
+    }
+    .global-header,
+    .global-footer {
+      @include container;
+      @include span-columns(8,8);
+      @include pad(4,4);
+    }
+    
+  }
+  
+}
+
+
+////////////////////////////
+// 76em min-width (1024px) //
+////////////////////////////
+
+@media screen and (min-width: 138em) {
+  
+  .no-sidebar-narrow {
+    
+    .main-content {
+      .content {
+        @include container;
+        @include span-columns(8,8);
+        @include pad(4.5,4.5);
+      }
+    }
+    .global-header,
+    .global-footer {
+      @include container;
+      @include span-columns(8,8);
+      @include pad(4.5,4.5);
+    }
+    
+  }
+  
+}

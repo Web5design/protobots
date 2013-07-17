@@ -1,0 +1,29 @@
+.progress-indicator {
+  width: 2.125em;
+  height: .65em;
+  margin: .35em 0;
+  @include box-sizing(border-box);
+  border-radius: 3px;
+  border: 3px solid $text;
+  background: $text;
+  .progress-bar {
+    @include hide-text;
+    background: $light-green;
+    height: 100%;
+    box-shadow: inset 0px 1px 3px rgba(255,255,255,.45);
+  }
+  &.unwatched {
+    background: transparent;
+    border: none;
+    .progress-bar {
+      background: transparent;
+      border: none;
+    }
+  }
+  &.watched {
+    border: 3px solid $light-green;
+    .progress-bar {
+      box-shadow: inset 0px 1px 3px rgba(255,255,255,.0);
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.player-container {
+  background: $light-background;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  border-top: 1px solid $light-border;
+  border-bottom: 1px solid $light-border;
+}
+
+.hero {
+  
+  .hero-content {
+  text-align: center;
+  padding-top: 2em;
+  border-top: 1px solid $light-border;
+  .hero-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $headline;
+  }
+  p {
+    font-size: 1.125em;
+  }
+  a.action-link {
+    @include box-sizing(border-box);
+    font-size: 1em;
+    padding: 1em 1em;
+    max-width: 19em;
+    margin-top: .5em;
+    margin-left: auto;
+    margin-right: auto;
+    background: $orange;
+    border: none;
+    &:hover {
+      background: $button-background;
+      border: none;
+    }
+  }
+  .secondary {
+    font-family: $serif;
+    font-style: italic;
+  }
+}
+  
+}
+
+
+/////////////////////////////
+// 48em min-width (768px) //
+/////////////////////////////
+
+@media screen and (min-width: 54em) {
+
+  .hero {
+    
+    .hero-content {
+      padding-top: 3em;
+      @include pad(1,1);
+      .hero-title {
+        font-size: 3em;
+        line-height: 1;
+      }
+      a.action-link {
+        font-size: 1.125em;
+        padding: 1em 1.25em;
+      }
+    }
+    
+  }
+
+}
+
+
+/////////////////////////////
+// 64em min-width (864px) //
+/////////////////////////////
+
+@media screen and (min-width: 54em) {
+  
+  .player-container {
+    padding-bottom: 0;
+  }
+  
+}
+
+/////////////////////////////
+// 60em min-width (960px) //
+/////////////////////////////
+
+@media screen and (min-width: 71.25em) {
+  
+  .hero-content {
+    @include pad(2,2);
+  }
+  
+}

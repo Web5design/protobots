@@ -1,0 +1,47 @@
+.social-nav {
+  li {
+    display: inline-block;
+    margin-right: .25em;
+    &:after {
+      display: none;
+    }
+  }
+  a {
+    width: 25px;
+    height: 25px;
+    display: block;
+    overflow: hidden;
+    text-indent: -99999999px;
+    &:hover {
+      opacity: .65;
+    }
+  }
+  .drupal {
+    background: url(../img/icon_drupal.svg) no-repeat;
+    background-size: contain;
+  }
+  .twitter {
+    background: url(../img/icon_twitter.svg) no-repeat;
+    background-size: contain;
+  }
+  .facebook {
+    background: url(../img/icon_facebook.svg) no-repeat;
+    background-size: contain;
+  }
+  .google-plus {
+    background: url(../img/icon_google-plus.svg) no-repeat;
+    background-size: contain;
+  }
+  .itunes {
+    background: url(../img/icon_itunes.svg) no-repeat;
+    background-size: contain;
+  }
+  .email {
+    background: url(../img/icon_email.svg) no-repeat;
+    background-size: contain;
+  }
+  .rss {
+    background: url(../img/icon_rss.svg) no-repeat;
+    background-size: contain;
+  }
+}

@@ -1,0 +1,112 @@
+#billboard {
+  background: $button-background;
+  color: white;
+  position: relative;
+  padding: 2em 0;
+  @include clearfix;
+  overflow: visible;
+  margin-top: 2em;
+  .next-link {
+    display: block;
+    position: absolute;
+    top: -1.40625em;
+    margin-left: -1.40625em;
+    border-radius: 50%;
+    left: 50%;
+    width: 2.8125em;
+    height: 2.8125em;
+    background: url(../img/icon_arrow-down_white.svg) no-repeat center center, $button-background;
+    border-bottom: none;
+    @include hide-text;
+    &:hover {
+      background: url(../img/icon_arrow-down_white.svg) no-repeat center center, $orange;
+      border-bottom: none;
+    }
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    text-align: center;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @include span-columns(6 omega,6);
+    @include border-box-sizing;
+    margin-bottom: 2em;
+  }
+  h2 {
+    font-weight: normal;
+    padding: 0 1em;
+    color: white;
+  }
+  .action-link {
+    margin: 0 1em;
+    margin-top: 2em;
+    background: $button-background-dark;
+    &:hover {
+      background: rgba(0,0,0,.6);
+    }
+  }
+}
+
+
+////////////////////////////
+// 48em min-width (768px) //
+////////////////////////////
+
+@media screen and (min-width: 48em) {
+
+  #billboard {
+    padding-top: 3em;
+    li {
+      @include span-columns(4,12);
+      padding-top: 76px;
+      position: relative;
+      &:before {
+        content: ' ';
+        width: 69px;
+        height: 76px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -34px;
+        background: url(../img/icon_drop.svg) no-repeat center center;
+      }
+      &:last-child {
+        @include span-columns(4 omega,12);
+      }
+      h2 {
+        padding: 0;
+      }
+    }
+    .videos:before {
+      background: url(../img/icon_library.svg) no-repeat center 32px, url(../img/icon_drop.svg) no-repeat center center;
+    }
+    .experts:before {
+      background: url(../img/icon_star_white.svg) no-repeat center 32px, url(../img/icon_drop.svg) no-repeat center center;
+    }
+    .training:before {
+      background: url(../img/icon_location.svg) no-repeat center 33px, url(../img/icon_drop.svg) no-repeat center center;
+    }
+  }
+
+}
+
+
+/////////////////////////////
+// 64em min-width (1024px) //
+/////////////////////////////
+
+@media screen and (min-width: 64em) {
+
+  #billboard {
+    @include container;
+    @include span-columns(12,12);
+    @include pad(1,1);
+    @include transition (padding 0.25s ease-in 0s);
+  }
+
+}

@@ -1,6 +1,0 @@
-#sticky-header {
-  background: $dark-grey;
-  @include respond-to($medium) {
-    background: none;
-  }
-}

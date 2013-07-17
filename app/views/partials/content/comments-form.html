@@ -1,0 +1,14 @@
+<section id="comment-form">
+  <h1 class="form-title">Review this video</h1>
+
+  <h2 class="rating-title">My Rating</h2>
+  <partial file="content/star-rating-form"></partial>
+
+  <form action="/" method="post" id="comment">
+    <textarea aria-required="true" required name="comment-text" id="comment-text" cols="120" rows="5" tabindex="4"></textarea>
+      <p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Review" />
+      <input type='hidden' name='comment_post_ID' value='47' id='comment_post_ID' />
+      <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+    </p>
+  </form>
+</section>

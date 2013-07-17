@@ -564,7 +564,7 @@ Object.extend(String.prototype, (function() {
   }
 
   function dasherize() {
-    return this.replace(/_/g, '-');
+    return this.replace(//g, '-');
   }
 
   function inspect(useDoubleQuotes) {

@@ -1,0 +1,272 @@
+.pricing {
+  .hero {
+    background: $light-background;
+    border-top: 1px solid $light-border;
+    border-bottom: 1px solid $light-border;
+  }
+}
+
+.pricing-options-block {
+  text-align: center;
+  padding-top: 0;
+  label {
+    text-align: left;
+  }
+  header {
+    .block-title {
+      font-size: 2.5em;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 1.125em;
+      line-height: 1.25;
+    }
+  }
+  .pricing-options {
+    padding: 0;
+    li {
+      list-style: none;
+      margin: 0;
+      @include box-sizing(border-box);
+      background: white;
+      box-shadow: 0.5px 0px 5px 0px rgba(0,0,0,.05);
+      display: block;
+      padding: 1.5em;
+      padding-top: 2.5em;
+      margin-bottom: .35em;
+      position: relative;
+      &.value:before {
+        content: 'Best Value';
+        color: white;
+        font-size: 0.75em;
+        text-transform: uppercase;
+        font-weight: bold;
+        display: inline-block;
+        @include box-sizing(border-box);
+        padding: .2em 1em;
+        position: absolute;
+        width: 50%;
+        top: 0;
+        left: 50%;
+        margin-left: -25%;
+        background: $button-background;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        white-space: nowrap;
+      }
+      &:hover {
+        box-shadow: 0.5px 0px 8px 0px rgba(0,0,0,.1);
+      }
+    }
+  }
+  .group-accounts-info {
+    font-style: italic;
+    line-height: 1.25;
+    margin: 1.5em 0;
+    strong {
+      font-style: normal;
+      text-transform: uppercase;
+    }
+  }
+  .option-title {
+    margin: 0;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: $link;
+  }
+  .price {
+    font-size: 3.75em;
+    font-weight: bold;
+    color: $headline;
+    line-height: 1.35;
+  }
+  .term {
+    font-size: 1.125em;
+  }
+  .billing-info {
+    display: block;
+    font-family: $serif;
+    font-style: italic;
+  }
+  .disclaimer {
+    display: block;
+    font-size: 0.6875em;
+    text-transform: uppercase;
+  }
+  .action-link {
+    margin-top: 1em;
+    background: $orange;
+    border: 1px solid $orange;
+    &:hover {
+      background: $button-background;
+      border: 1px solid $button-background;
+    }
+  }
+}
+
+.checkout {
+  .pricing-options-block {
+    .pricing-options {
+      margin: 0;
+      li {
+        border: 1px solid $light-border;
+        opacity: .45;
+        padding: 1em;
+        @include border-box-sizing;
+        &.selected {
+          opacity: 1;
+          border: 3px solid $button-background;
+          .action-link {
+            background: $text-light;
+            border: 1px solid $text-light;
+          }
+        }
+        &:hover {
+          opacity: 1;
+        }
+        &.value:before {
+          display: none;
+        }
+      }
+    }
+    .option-title {
+      font-size: 1em;
+    }
+    .price {
+      font-size: 2em;
+    }
+    .action-link {
+      font-size: .75em;
+      padding-left: .75em;
+      padding-right: .75em;
+      margin: 0;
+      margin-top: .25em;
+    }
+  }
+}
+
+
+////////////////////////////
+// 32em min-width (512px) //
+////////////////////////////
+
+@media screen and (min-width: 32em) {
+
+  .pricing-options-block {
+    .pricing-options {
+      li {
+        text-align: right;
+        &.value:before {
+          width: auto;
+          left: 0;
+          margin-left: 0;
+          border-bottom-left-radius: 0px;
+        }
+      }
+    }
+    .option-title {
+      float: left;
+    }
+    .action-link {
+      position: absolute;
+      top: 5em;
+      left: 1.5em;
+    }
+  }
+  
+  .checkout {
+    .pricing-options-block {
+      .action-link {
+        top: 1.75em;
+        left: 10em;
+        margin: 0;
+      }
+      .option-title {
+        margin-top: .75em;
+      } 
+    }
+  }
+
+}
+
+
+////////////////////////////
+// 48em min-width (768px) //
+////////////////////////////
+
+@media screen and (min-width: 48em) {
+
+  .pricing-options-block {
+    
+    header {
+      .block-title {
+        font-size: 3em;
+      }
+    }
+    
+    .pricing-options {
+      @include clearfix;
+      li {
+        text-align: center;
+        float: left;
+        width: 32.33%;
+        margin-right: 1.5%;
+        &:nth-child(3n+3) {
+          margin-right: 0;
+        }
+        &.value:before {
+          width: 50%;
+          margin-left: -25%;
+          left: 50%;
+          border-bottom-left-radius: 5px;
+        }
+      }
+    }
+    
+    .option-title {
+      float: none;
+    }
+    
+    .action-link {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+    
+    .group-accounts-info {
+      font-size: 1.125em;
+    }
+  }
+  
+  .checkout {
+    .pricing-options-block {
+      .action-link {
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+      .option-title {
+        margin-top: 0;
+      }
+    }
+  }
+
+}
+
+
+////////////////////////////
+// 56em min-width (896px) //
+////////////////////////////
+
+@media screen and (min-width: 56em) {
+
+  .pricing-options-block {
+    .action-link {
+      font-size: 1.125em;
+    }
+    .billing-info {
+      font-size: 1.125em;
+    }
+  }
+
+}
