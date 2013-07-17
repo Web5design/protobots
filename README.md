@@ -127,3 +127,13 @@ When you visit your homepage you will now get the following:
 ```
 
 This might seem a lot of work when getting started, but for larger projects you will certainly start to see significant benefits. If you happen to have several pages based on a single template this method will allow you to add/remove/change classes, ID's or other attributes from regions without having to replicate those changes across all of the files. You can also reorder regions inside of your template (move sidebar before content) without having to change the order of the content in all of your pages.
+
+## Addition features
+
+### Placeholder Images
+
+### Placeholder Text
+
+### Repeating Directive
+
+
