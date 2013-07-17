@@ -17,6 +17,9 @@ This will download all of the appropriate javascript packages needing to create 
 ## Editing the Home Page
 To edit the start page in Protobots simply add valid markup to the views/home.html file. All pages inherit the basic HTML structure of index.html which includes ```<html>```  ```<head>```  ```<body>``` and a ```<div class="page">``` page wrapper.
 
+## Creating New Pages
+Any html file placed into the views directory can be accessed by visiting ```<root_url>/#/file_name```. So to create an about-us or blog page simply create ```views/about-us.html``` or ```views/blog.html```.
+
 ## Partials
 To create a HTML snippet or "partial", just create a new html file in the views/partials directory. The partial may only contain a single parent element, but can have as many child elements as needed.
 
