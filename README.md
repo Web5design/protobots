@@ -1,3 +1,6 @@
+## About
+What is protobots, you ask? Why would you use it?
+
 ## Installation
 After downloading Protobots, you need to make sure you have the appropriate Ruby gems. To do this, we use bundler.
 
